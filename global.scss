@@ -98,21 +98,41 @@ body {
 
         &__nav {
             display: none;
-
+        
             @media (max-width: 400px) {
                 display: block;
                 align-self: flex-start;
                 position: absolute;
                 left: 10px;
                 top: 20px;
+                animation: menufall 2s ease-in-out forwards;
             }
-
+        
             @media (max-width: 700px) and (min-width: 401px) {
                 display: block;
                 align-self: flex-start;
                 position: absolute;
                 left: 10px;
                 top: 20px;
+                animation: menufall 2s ease-in-out forwards;
+            }
+        }
+        
+        @keyframes menufall {
+            0% {
+                transform: translateY(-100%);
+            }
+            70% {
+                transform: translateY(100%);
+            }
+            80% {
+                transform: translateY(85%);
+            }
+            90% {
+                transform: translateY(95%);
+            }
+            100% {
+                transform: translateY(0);
             }
         }
 
@@ -393,6 +413,25 @@ body {
         width: 45%;
         height: 100%;
         margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    
+        &:hover {
+            animation: cardmoveright 3s forwards;
+        }
+    
+        @keyframes cardmoveright {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
 
         @media (max-width: 400px) {
             width: 100%;
