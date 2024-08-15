@@ -1,28 +1,35 @@
-@charset "UTF-8";
 :root {
-  --main-bg-color: #F5F7FA;
-  --main-text-color: #343C6A;
-  --highlight-color: #2D60FF;
-  --button-bg-color: #F5F7FA;
-  --button-text-color: #8BA3CB;
-  --font-size-xs: 10px;
-  --font-size-sm: 12px;
-  --font-size-md: 14px;
-  --font-size-lg: 16px;
-  --font-size-xl: 20px;
-  --font-size-xxl: 24px;
+  /* Primary Colors */
+  --color-primary: #343C6A;
+  --color-primary-light: #718EBF;
+  --color-primary-background: #F5F7FA;
+  --color-text-header:#8BA3CB;
+  /* Secondary Colors */
+  --color-secondary: #16DBCC;
+  --color-backround: white;
+  --color-secondary-background: #EDF1F7;
+  /* Fonts */
+  --font-family-primary: "Arial", sans-serif;
+  --font-family-secondary: "Helvetica", sans-serif;
+  /* Font Sizes */
+  --font-size-xsmall:10px;
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+  --font-size-large: 16px;
+  --font-size-xlarge: 18px;
+  --font-size-xxlarge: 20px;
 }
 
 body {
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary);
   overflow: hidden;
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--color-primary-background);
+  color: var(--color-primary);
 }
 @media (max-width: 400px) {
   body {
@@ -38,7 +45,7 @@ body {
 }
 @media (min-width: 1025px) and (max-width: 1349px) {
   body {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-medium);
   }
 }
 
@@ -47,7 +54,7 @@ body {
   flex-direction: column;
   width: 85%;
   order: 2;
-  background-color: var(--main-bg-color);
+  background-color: var(--color-primary-background);
   height: 100vh;
   overflow-y: auto;
   margin: auto;
@@ -88,7 +95,7 @@ body {
 }
 @media (min-width: 1025px) and (max-width: 1349px) {
   .dashbored .header {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-small);
   }
 }
 .dashbored .header__nav {
@@ -135,14 +142,14 @@ body {
 }
 @media (min-width: 701px) and (max-width: 1024px) {
   .dashbored .header__title {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-medium);
     width: 10%;
     margin: 0;
   }
 }
 @media (min-width: 1025px) and (max-width: 1349px) {
   .dashbored .header__title {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-small);
   }
 }
 .dashbored .header__account {
@@ -196,7 +203,7 @@ body {
 }
 .dashbored .header__img {
   width: 40px;
-  background-color: var(--main-bg-color);
+  background-color: var(--color-primary-background);
   border-radius: 50%;
   height: 40px;
 }
@@ -220,21 +227,21 @@ body {
   border-radius: 20px;
   padding: 5px 20px;
   border: none;
-  background-color: var(--button-bg-color);
+  background-color: var(--color-secondary-background);
   align-items: center;
   text-align: center;
   display: flex;
-  color: var(--button-text-color);
+  color: var(--color-text-header);
 }
 @media (min-width: 701px) and (max-width: 1024px) {
   .dashbored .header__button {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-small);
     gap: 4px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1349px) {
   .dashbored .header__button {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-xsmall);
   }
 }
 
@@ -269,7 +276,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 25%;
-    /* התאמת רוחב לפי הצורך */
   }
 }
 .menu__header {
@@ -280,7 +286,7 @@ body {
 }
 .menu__header__title {
   font-weight: bold;
-  color: var(--main-text-color);
+  color: var(--color-primary);
 }
 .menu__logo {
   max-width: 36px;
@@ -299,7 +305,6 @@ body {
 @media (min-width: 1025px) and (max-width: 1349px) {
   .menu__wrapper {
     margin-left: 0;
-    /* התאמת מיקום */
   }
 }
 .menu__list {
@@ -314,22 +319,20 @@ body {
 @media (min-width: 1025px) and (max-width: 1349px) {
   .menu__list {
     width: 100%;
-    /* התאמת רוחב */
   }
 }
 .menu__item {
   margin-top: 35px;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-large);
 }
 @media (min-width: 701px) and (max-width: 1024px) {
   .menu__item {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-small);
   }
 }
 @media (min-width: 1025px) and (max-width: 1349px) {
   .menu__item {
-    font-size: var(--font-size-sm);
-    /* הקטנת גודל טקסט כדי להתאים למסך */
+    font-size: var(--font-size-small);
   }
 }
 .menu__link {
@@ -337,8 +340,8 @@ body {
   color: #B1B1B1;
 }
 .menu__link:hover {
-  color: var(--highlight-color);
-  fill: var(--highlight-color);
+  color: var(--color-primary-light);
+  fill: var(--color-primary-light);
   font-weight: bold;
 }
 .menu__svg {
@@ -355,14 +358,13 @@ body {
 @media (min-width: 1025px) and (max-width: 1349px) {
   .menu__svg {
     width: 25px;
-    /* הקטנת גודל האייקונים */
   }
 }
 .menu__svg:active {
-  fill: var(--highlight-color);
+  fill: var(--color-primary-light);
 }
 .menu__svg:hover {
-  fill: var(--highlight-color);
+  fill: var(--color-primary-light);
 }
 
 .cards {
@@ -435,6 +437,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 8px;
+    font-size: 10px;
   }
 }
 .cards__card--accounts {
@@ -726,19 +729,19 @@ body {
   color: #1814f3;
 }
 @media (max-width: 400px) {
-  .pagination__link {
+  .pagination__link:active {
     justify-content: center;
     padding: 8px 12px;
   }
 }
 @media (max-width: 700px) and (min-width: 401px) {
-  .pagination__link {
+  .pagination__link:active {
     justify-content: center;
     padding: 10px 14px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1349px) {
-  .pagination__link {
-    font-size: var(--font-size-xs);
+  .pagination__link:active {
+    font-size: var(--font-size-xsmall);
   }
 }
