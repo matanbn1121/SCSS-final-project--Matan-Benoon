@@ -10,11 +10,11 @@
     --color-backround: white; 
     --color-secondary-background: #EDF1F7; 
   
-    /* Fonts */
+    /* Fonts web */
     --font-family-primary: 'Arial', sans-serif;
     --font-family-secondary: 'Helvetica', sans-serif;
   
-    /* Font Sizes */
+    /* Font Sizes for all screen */
     --font-size-xsmall:10px;
     --font-size-small: 12px;
     --font-size-medium: 14px;
@@ -347,8 +347,8 @@ body {
         color: #B1B1B1;
 
         &:hover {
-            color: var(--color-primary-light);
-            fill: var(--color-primary-light);
+            color: blue;
+            fill: blue;
             font-weight: bold;
         }
     }
@@ -369,11 +369,11 @@ body {
     }
 
     &__svg:active {
-        fill: var(--color-primary-light);
+        fill: blue;
     }
 
     &__svg:hover {
-        fill: var(--color-primary-light);
+        fill: blue;
     }
 }
 
