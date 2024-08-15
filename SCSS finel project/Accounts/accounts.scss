@@ -78,11 +78,12 @@
     }
 
     &__title {
-        color: var(--color-primary-light);
+        color: black;
         font-size: var(--font-size-large);
+        font-weight: bold;
 
         @media (max-width: 400px) {
-            font-size: var(--font-size-small);
+            font-size: var(--font-size-medium);
         }
 
         @media (min-width: 401px) and (max-width: 700px) {
@@ -303,9 +304,10 @@
         &__red {
             color: red;
             font-weight: bold;
+            background-color: white;
     
             @media (max-width: 400px) {
-                font-size: var(--font-size-small);
+                font-size: var(--font-size-large);
             }
 
             @media (min-width: 401px) and (max-width: 700px) {
@@ -320,9 +322,11 @@
         &__green {
             color: var(--color-secondary);
             font-weight: bold;
+            background-color: white;
+
     
             @media (max-width: 400px) {
-                font-size: var(--font-size-small);
+                font-size: var(--font-size-large);
             }
 
             @media (min-width: 401px) and (max-width: 700px) {

@@ -243,7 +243,8 @@ body {
             align-items: center;
             text-align: center;
             display: flex;
-            color: var( --color-text-header);
+            color: #00274C;
+            font-weight: bold;
 
             @media (min-width: 701px) and (max-width: 1024px) {
                 font-size: var(--font-size-small);
@@ -346,6 +347,7 @@ body {
     &__link {
         text-decoration: none;
         color: #B1B1B1;
+        font-weight: bold;
 
         &:hover {
             color: blue;
