@@ -701,6 +701,12 @@
     font-size: var(--font-size-small);
   }
 }
+@media (min-width: 1025px) and (max-width: 1350px) {
+  .transactions__button {
+    padding: 4px 8px;
+    font-size: var(--font-size-small);
+  }
+}
 .transactions__cell {
   display: flex;
   align-items: center;
