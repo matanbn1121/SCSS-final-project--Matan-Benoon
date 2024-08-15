@@ -95,7 +95,7 @@ body {
         @media (min-width: 1025px) and (max-width: 1349px) {
             font-size: var(--font-size-small);
         }
-
+        //// for screen 400px-701px
         &__nav {
             display: none;
         
@@ -117,7 +117,8 @@ body {
                 animation: menufall 2s ease-in-out forwards;
             }
         }
-        
+                //// ani menu
+
         @keyframes menufall {
             0% {
                 transform: translateY(-100%);
@@ -255,7 +256,7 @@ body {
         }
     }
 }
-
+/// menu aside
 .menu {
     display: flex;
     flex-direction: column;
@@ -376,7 +377,7 @@ body {
         fill: blue;
     }
 }
-
+/// for all cards in all pages
 .cards {
     display: flex;
     width: 65%;
@@ -420,7 +421,7 @@ body {
         &:hover {
             animation: cardmoveright 3s forwards;
         }
-    
+        ///ani for cards
         @keyframes cardmoveright {
             0% {
                 transform: rotate(0deg);
@@ -461,7 +462,7 @@ body {
             padding: 8px;
             font-size: 10px;
         }
-
+ /// card 1-2 and card on account page
         &--accounts {
             width: 100%;
             height: 70%;
@@ -477,7 +478,7 @@ body {
                 height: auto;
             }
         }
-
+       
         &--first {
             background: linear-gradient(45deg, #4C49ED, #0A06F4);
             color: white;
@@ -711,6 +712,7 @@ body {
         }
     }
 }
+/// footer 
 .pagination {
     display: flex;
     justify-content: end;
